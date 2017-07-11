@@ -92,7 +92,8 @@
     "LICENSE",
     "package.json",
     "README.md",
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "config": {
     "commitizen": {
