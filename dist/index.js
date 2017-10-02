@@ -1,2 +1,2 @@
-export { ClipboardModule, ClipboardDirective } from './src/index';
+export { ClipboardModule, ClipboardDirective, ClipboardService } from './src/index';
 //# sourceMappingURL=index.js.map

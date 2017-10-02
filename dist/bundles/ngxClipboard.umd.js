@@ -178,10 +178,9 @@ var ClipboardDirective = (function () {
         this.clipboardSrv.destroy();
     };
     /**
-     * @param {?} button
      * @return {?}
      */
-    ClipboardDirective.prototype.onClick = function (button) {
+    ClipboardDirective.prototype.onClick = function () {
         if (!this.clipboardSrv.isSupported) {
             this.handleResult(false, undefined);
         }
@@ -249,6 +248,7 @@ ClipboardModule.ctorParameters = function () { return []; };
 
 exports.ClipboardModule = ClipboardModule;
 exports.ClipboardDirective = ClipboardDirective;
+exports.ClipboardService = ClipboardService;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

@@ -1,5 +1,5 @@
-import { ClipboardService } from './clipboard.service';
 import { EventEmitter, OnDestroy, OnInit, Renderer } from '@angular/core';
+import { ClipboardService } from './clipboard.service';
 export declare class ClipboardDirective implements OnInit, OnDestroy {
     private clipboardSrv;
     private renderer;
@@ -10,7 +10,7 @@ export declare class ClipboardDirective implements OnInit, OnDestroy {
     constructor(clipboardSrv: ClipboardService, renderer: Renderer);
     ngOnInit(): void;
     ngOnDestroy(): void;
-    private onClick(button);
+    onClick(): void;
     /**
      * Fires an event based on the copy operation result.
      * @param {Boolean} succeeded

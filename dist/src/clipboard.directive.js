@@ -1,5 +1,5 @@
-import { ClipboardService } from './clipboard.service';
 import { Directive, EventEmitter, HostListener, Input, Output, Renderer } from '@angular/core';
+import { ClipboardService } from './clipboard.service';
 var ClipboardDirective = (function () {
     /**
      * @param {?} clipboardSrv
@@ -22,10 +22,9 @@ var ClipboardDirective = (function () {
         this.clipboardSrv.destroy();
     };
     /**
-     * @param {?} button
      * @return {?}
      */
-    ClipboardDirective.prototype.onClick = function (button) {
+    ClipboardDirective.prototype.onClick = function () {
         if (!this.clipboardSrv.isSupported) {
             this.handleResult(false, undefined);
         }

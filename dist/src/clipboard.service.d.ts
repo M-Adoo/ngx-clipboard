@@ -1,4 +1,4 @@
-import { InjectionToken, Optional, Renderer } from '@angular/core';
+import { Optional, Renderer, InjectionToken } from '@angular/core';
 export declare class ClipboardService {
     private document;
     private window;
